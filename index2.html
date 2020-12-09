@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class = "container-1">
+        <h2>Challenge 1 : Your Age in Days</h2>
+        <div class = "container-1-flexbox">
+            <button class = "btn btn-primary" onclick="getAge()">Click Me</button>
+            <button class="btn btn-danger" onclick="removeAge()">Reset</button>
+        </div>    
+
+        <div class="container-1-flexbox">
+            <div id="container-1-flexbox-ans"></div>
+        </div>
+    </div>
+    
+    <div class = "container-2">
+        <h2>Challenge 2 : Cat Generator</h2>
+        <div class="container-2-flexbox">
+            <button class = "btn btn-success" onclick="generateCatImg()" >Generate</button>
+        </div>
+            <div class="container-2-flexbox" id="CatContainerIMG">
+                <!-- <img src=" https://api.thecatapi.com/api/images/get?format=src&type=gif&size=small">
+                <img src=" https://api.thecatapi.com/api/images/get?format=src&type=gif&size=small">
+                <img src=" https://api.thecatapi.com/api/images/get?format=src&type=gif&size=small">
+                <img src=" https://api.thecatapi.com/api/images/get?format=src&type=gif&size=small">
+                <img src=" https://api.thecatapi.com/api/images/get?format=src&type=gif&size=small"> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container-3" id="1">
+        <h2>Challenge 3: Rock Paper Scissors Game</h2>
+        <div class="container-3-flexbox" id="idC3">
+            <img id = "rock" src="https://clipartstation.com/wp-content/uploads/2017/11/batu-clipart-4.png" height="150px" width="150px" onclick="rpsGame(this)">
+            <img id = "paper" src="https://clipartstation.com/wp-content/uploads/2018/10/piece-of-paper-clipart-3.jpg" height="150px" width="150px" onclick="rpsGame(this)">
+            <img id = "scissor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUP9FGIeCG3DOWDlAJYnRwUqro4AU__ZsfLA&usqp=CAU" height="150px" width="150px" onclick="rpsGame(this)">
+        </div>
+        <div class="container-3-flexbox" id="idC3_1"></div>
+    </div>
+
+    <div class="container-4">
+        <h2>Challenge 4: Change Color Of All Buttons</h2>
+        <div class = "container-4-flexbox">
+            <form action="">
+                <select name="bgcolor" id="button-colors" onchange="colorChange(this)" >
+                    <option value="random">random</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="reset">reset</option>
+                </select>
+            </form>
+
+            <button class = "btn btn-primary">facebook</button>
+            <button class="btn btn-danger">yahoo!</button>
+            <button class="btn btn-warning ">google!</button>
+            <button class="btn btn-success">whatsapp!</button>
+        </div>
+    </div>
+
+    <div class="container-5">
+            <h2>Challenge 5: Blackjack</h2>
+            <p><span id="blackjack-result">Let's Play</span></p>
+        <div class = "container-5-flexbox" id="container-5-flexbox-row-1">
+            <div>You:<span>0</span></div>
+            <div>Dealer:<span>0</span></div>
+        </div>
+        <div class = "container-5-flexbox" id="container-5-flexbox-row-2">
+            <div>
+               <button class="btn btn-primary" id="hit">Hit</button>
+               <button class="btn btn-warning" id="stand">Stand</button>
+               <button class="btn btn-danger" id="deal">Deal</button>
+            </div>
+        </div>
+        <div class="container-5-flexbox"  id="container-5-flexbox-row-3">
+            <table>
+                <tr>
+                    <th>wins</th>
+                    <th>losses</th>
+                    <th>draws</th>
+                </tr>
+                <tr>
+                    <td><span>0</span></td>
+                    <td><span>0</span></td>
+                    <td><span>0</span></td>
+                </tr>
+            </table>
+        </div>
+        
+
+    </div>
+    <script src = "script2.js"></script>
+</body>
+</html>

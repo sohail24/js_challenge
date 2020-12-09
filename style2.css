@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(31, 23, 51);
+  }
+  @media screen and (prefers-color-scheme: light) {
+    body {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  div{
+      background-color: lavender;
+  }
+
+
+.container-1,.container-2,.container-3,.container-4,.container-5{
+   border: 1px solid grey;
+   width: 75%;
+   margin: 50px auto;
+   padding: 20px;
+   border-radius: 5px;
+}
+
+.container-1-flexbox,.container-2-flexbox,.container-3-flexbox,
+.container-4-flexbox,.container-5-flexbox{
+   display: flex;
+   border: 1px solid black;
+   padding: 10px;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.container-1-flexbox button, .container-2-flexbox button{
+    margin: 10px;
+}
+
+.container-2-flexbox img{
+    border: 1px solid darkgrey;
+    margin: 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+.container-3-flexbox img{
+    margin: 20px;
+}
+
+.container-3-flexbox img:hover{
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+    margin: 20px;
+}
+
+#container-5-flexbox-row-1 div{
+    height: 500px;
+    background-color: transparent;
+}
+
+#blackjack-result{
+    display: flex;
+    justify-content: center;
+    color: darkred;
+    font-size: 30px;
+}
+
+#container-5-flexbox-row-1 ,#container-5-flexbox-row-2,#container-5-flexbox-row-3 {
+    /* background: url('https://pl.sterlingcdn.com/wp-content/uploads/sites/3/2018/07/blackjack-classic-background.jpg')center; */
+    background: url('https://images.hdqwalls.com/download/abstract-green-gradient-bs-1680x1050.jpg')center;
+    color: white;
+}
+
+#container-5-flexbox-row-1 div{
+    display: flex;
+    flex: 1;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+#container-5-flexbox-row-3{
+    display: flex;
+    flex: 1;
+    justify-content: left;
+}
+
+#container-5-flexbox-row-3 th,td{
+    padding: 10px;
+    border-left: 5px solid darkslategrey;
+}
+
+#container-5-flexbox-row-3 table{
+    border-radius: 10px;
+    background-color: honeydew;
+    width: 40%;
+}
