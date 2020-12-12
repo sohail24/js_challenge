@@ -60,23 +60,38 @@
             <button class="btn btn-danger">yahoo!</button>
             <button class="btn btn-warning ">google!</button>
             <button class="btn btn-success">whatsapp!</button>
+        
         </div>
     </div>
 
     <div class="container-5">
             <h2>Challenge 5: Blackjack</h2>
             <p><span id="blackjack-result">Let's Play</span></p>
-        <div class = "container-5-flexbox" id="container-5-flexbox-row-1">
-            <div>You:<span>0</span></div>
-            <div>Dealer:<span>0</span></div>
+        
+            <div class = "container-5-flexbox" id="container-5-flexbox-row-1">
+            <div id = "your-box">
+                <h2>You:<span id="your-result">0</span></h2>
+                <div id="your-box-card-holder"></div>
+                    <!-- <div style="border: 1px solid black;">Here Images Card Will Be placed</div>
+
+                <img src="static/images/4.png"> -->
+        
+            </div>
+                            
+            <div id ="dealer-box"> 
+                <h2>Dealer:<span id = "dealer-result">0</span></h2>
+                <div id="your-box-card-holder"></div>
+            </div>
         </div>
+
         <div class = "container-5-flexbox" id="container-5-flexbox-row-2">
-            <div>
+            <div style="background-color: transparent;">
                <button class="btn btn-primary" id="hit">Hit</button>
                <button class="btn btn-warning" id="stand">Stand</button>
                <button class="btn btn-danger" id="deal">Deal</button>
             </div>
         </div>
+
         <div class="container-5-flexbox"  id="container-5-flexbox-row-3">
             <table>
                 <tr>
@@ -91,7 +106,6 @@
                 </tr>
             </table>
         </div>
-        
 
     </div>
     <script src = "script2.js"></script>
