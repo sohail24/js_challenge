@@ -49,11 +49,6 @@ body {
     margin: 20px;
 }
 
-#container-5-flexbox-row-1 div{
-    height: 500px;
-    background-color: transparent;
-}
-
 #blackjack-result{
     display: flex;
     justify-content: center;
@@ -61,17 +56,52 @@ body {
     font-size: 30px;
 }
 
-#container-5-flexbox-row-1 ,#container-5-flexbox-row-2,#container-5-flexbox-row-3 {
+#container-5-flexbox-row-1 ,#container-5-flexbox-row-2,#container-5-flexbox-row-3 { 
     /* background: url('https://pl.sterlingcdn.com/wp-content/uploads/sites/3/2018/07/blackjack-classic-background.jpg')center; */
     background: url('https://images.hdqwalls.com/download/abstract-green-gradient-bs-1680x1050.jpg')center;
-    color: white;
+
 }
+
+#container-5-flexbox-row-1{
+    display: flex;
+    flex-direction: row;
+    border: 10px solid black;
+}
+
+#your-box, #dealer-box{
+    display: flexbox;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#your-box-card-holder, #dealer-box-card-holder{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid black;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 350px;
+}
+
+#your-box img, #dealer-box img{
+    margin: 10px;
+}
+/* 
+#container-5-flexbox-row-1 div{
+    height: 500px;
+    background-color: transparent;
+}
+
 
 #container-5-flexbox-row-1 div{
     display: flex;
-    flex: 1;
+    width: 50%;
     font-size: 25px;
     font-weight: bold;
+    flex-wrap: wrap;
+    padding: 20px;
     justify-content: center;
     border: 1px solid black;
 }
@@ -92,3 +122,9 @@ body {
     background-color: honeydew;
     width: 40%;
 }
+
+#your-box{
+    display: flex;
+    justify-content: center;
+
+} */
