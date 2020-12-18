@@ -9,7 +9,7 @@ body {
   }
 
   div{
-      background-color: lavender;
+      background-color: whitesmoke;
   }
 
 
@@ -80,13 +80,32 @@ body {
     display: flex;
     flex-direction: row;
     border: 5px solid black;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    height: 350px;
+    height: 550px;
 }
 
 #your-box img, #dealer-box img{
     margin: 10px;
+}
+
+
+#container-5-flexbox-row-3{
+    display: flex;
+    flex: 1;
+    justify-content: left;
+}
+
+#container-5-flexbox-row-3 th,td{
+    padding: 10px;
+    border-left: 5px solid darkslategrey;
+}
+
+#container-5-flexbox-row-3 table{
+    border-radius: 10px;
+    background-color: honeydew;
+    width: 40%;
 }
 /* 
 #container-5-flexbox-row-1 div{
@@ -106,22 +125,7 @@ body {
     border: 1px solid black;
 }
 
-#container-5-flexbox-row-3{
-    display: flex;
-    flex: 1;
-    justify-content: left;
-}
 
-#container-5-flexbox-row-3 th,td{
-    padding: 10px;
-    border-left: 5px solid darkslategrey;
-}
-
-#container-5-flexbox-row-3 table{
-    border-radius: 10px;
-    background-color: honeydew;
-    width: 40%;
-}
 
 #your-box{
     display: flex;
